@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textarea</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">textarea</h1>
+
+    <section>
+        <h2>textarea</h2>
+        <p>The <code style="color:red">&lt;textarea&gt;</code> tag defines a multi-line text input control.The
+            &lt;textarea&gt; element is often used in a form, to collect user inputs like comments or reviews.A text
+            area
+            can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).
+            The
+            size of a text area is specified by the &lt;cols&gt; and &lt;rows&gt; attributes (or with CSS).The name
+            attribute is
+
+            needed to reference the form data after the form is submitted (if you omit the name attribute, no
+            data from the text area will be submitted).The id attribute is needed to associate the text area
+            with a label.<br><br>
+            <strong>Tip</strong>: Always add the <label> tag for best accessibility practices!
+        </p>
+        <div style="background: #e4eff1">
+            <p>Example of a textarea code and ouput with 4 rows and 50 columns:
+            </p>
+            <hr>
+            <code class="line-numbers">
+                <pre class="language-markup">
+                    &lt;label for="txtArea"&gt;Review of textarea:&lt;/label&gt;
+
+                    &lt;textarea id="txtArea" name="txtArea" rows="4" cols="50"&gt;
+                        At Academic Bridge you will learn how to speak English. They offer
+                        great tutorials in all levels of English. They are located in
+                        Ireland's capital Dublin. Give it a try.
+                    &lt;/textarea&gt;
+                </pre>
+            </code>
+            <code>
+                <label for="txtArea">Review of Academic Bridge:</label>
+
+                <textarea id="txtArea" name="txtArea" rows="4" cols="50">At At Academic Bridge you will learn how to speak English. They offer great tutorials in all levels of English. They are located in Ireland's capital Dublin. Give it a try.
+                </textarea>
+            </code>
+        </div>
+        <br>
+        <br>
+        <a href="form-elements.html">Return</a>
+    </section>
+</body>
+
+</html>

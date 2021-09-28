@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">HTML &lt;input&gt; <strong>step</strong> Attribute</h1>
+
+    <section>
+        <h2>step</h2>
+        <p>The <code style="color:red">step</code> <code style="color:red"></code> attribute specifies the
+            interval between legal numbers in an &lt;input&gt; element.
+            <strong>Example</strong>: if <strong>step="3"</strong>, legal numbers could be -3, 0, 3, 6, etc.
+<br><br>
+            <strong>Tip</strong>: The <strong>step</strong> attribute can be used together with the <strong>max</strong>
+            and <strong>min</strong>
+            attributes to create a
+            range of legal
+            values.
+<br><br>
+            <strong>Note</strong>: The step attribute works with the following input types: <u>number, range, date,
+            datetime-local, month,
+            time</u> and <u>week</u>.
+
+        </p>
+        <div style="background:#e4eff1">
+            <p>Example:
+                <br><br>
+An HTML form with an input field with a specified legal number intervals:
+            </p>
+            <hr>
+            <code>
+                <pre>
+                    &lt;form action="/action_page.php"&gt;
+                    &lt;label for="points"&gt;Points:&lt;/label&gt;
+                    &lt;input type="number" id="points" name="points" step="3"&gt;
+                    &lt;input type="submit"&gt;
+                    &lt;/form&gt;
+                </pre>
+            </code>
+            <samp>
+                <form action="/action_page.php">
+                    <label for="points">Points:</label>
+                    <input type="number" id="points" name="points" step="3">
+                    <input type="submit">
+                </form>
+            </samp>
+            <br>
+        </div>
+        <br>
+        <br>
+        <a href="form-elements.html">Return</a>
+    </section>
+</body>
+
+</html>

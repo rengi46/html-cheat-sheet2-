@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>min and max</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">min and max Attributes in HTML</h1>
+
+    <section>
+        <h2>min and max</h2>
+        <p>The <code style="color:red">min</code> and <code style="color:red">max</code> attribute specifies the minimum
+            and maximum values for an &lt;input&gt; element.<br><br>
+
+            <strong>Tip</strong>: Use the <strong>min</strong> attribute together with the <strong>max</strong>
+            attribute to create a range of legal values.
+            <br><br>
+            <strong>Note</strong>: The <strong>min</strong> and <strong>max</strong> attributes works with the following input types:
+            <u>number, range, date,
+            datetime-local,
+            month, time</u> and <u>week.</u>
+        </p>
+        <div style="background:#e4eff1">
+            <p>Example:
+            </p>
+            <hr>
+            <code>
+                <pre>
+                    &lt;form action="/action_page.php"&gt;
+
+                    &lt;label for="datemax"&gt;Enter a date before 1980-01-01:&lt;/label&gt;
+                    &lt;input type="date" id="datemax" name="datemax" max="1979-12-31"&gt;&lt;br&gt;&lt;br&gt;
+
+                    &lt;label for="datemin"&gt;Enter a date after 2000-01-01:&lt;/label&gt;
+                    &lt;input type="date" id="datemin" name="datemin" min="2000-01-02"&gt;&lt;br&gt;&lt;br&gt;
+
+                    &lt;label for="quantity"&gt;Quantity (between 1 and 5):&lt;/label&gt;
+                    &lt;input type="number" id="quantity" name="quantity" min="1" max="5"&gt;&lt;br&gt;&lt;br&gt;
+
+                    &lt;input type="submit"&gt;
+
+                    &lt;/form&gt;
+                </pre>
+            </code>
+            <br><br>
+            <samp>
+                <form action="/action_page.php" style="margin-left:  150px">
+
+                    <label for="datemax">Enter a date before 1980-01-01:</label>
+                    <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+                    <label for="datemin">Enter a date after 2000-01-01:</label>
+                    <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+                    <label for="quantity">Quantity (between 1 and 5):</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+
+                    <input type="submit">
+
+                </form>
+            </samp>
+            <br><br>
+        </div>
+        <br>
+        <br>
+        <a href="form-elements.html">Return</a>
+    </section>
+</body>
+
+</html>

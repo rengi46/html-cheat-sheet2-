@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>readonly</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">HTML &lt;input&gt; <strong>readonly</strong> Attribute</h1>
+
+    <section>
+        <h2>readonly</h2>
+        <p>The <code style="color:red">readonly</code> <code style="color:red"></code> is a boolean attribute. When
+            present, it specifies that an input field is read-only.
+            <br><br>
+            A read-only input field cannot be modified (however, a user can tab to it, highlight it, and copy the text
+            from it).
+            <br><br>
+            The <strong>readonly</strong> attribute can be set to keep a user from changing the value until some other
+            conditions have
+            been met (like selecting a checkbox, etc.). Then, a JavaScript can remove the readonly value, and make the
+            input field editable.
+            <br><br>
+            <strong>Note</strong>: A form will still submit an input field that is <strong>readonly</strong>, but will
+            not submit an input field that is
+            disabled!
+        </p>
+        <div style="background:#e4eff1">
+            <p>Example:
+                <br><br>
+                An HTML form with a read-only input field:
+            </p>
+            <hr>
+            <code>
+                <pre>
+                    &lt;form action="/action_page.php"&gt;
+                    &lt;label for="country"&gt;Country:&lt;/label&gt;
+                    &lt;input type="text" id="country" name="country" value="Norway" readonly&gt;&lt;br&gt;&lt;br&gt;
+                    &lt;input type="submit" value="Submit"&gt;
+                    &lt;/form&gt;
+                </pre>
+            </code>
+            <samp>
+                <form action="/action_page.php">
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country" value="Norway" readonly><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </samp>
+            <br>
+        </div>
+        <br>
+        <br>
+        <a href="form-elements.html">Return</a>
+    </section>
+</body>
+
+</html>

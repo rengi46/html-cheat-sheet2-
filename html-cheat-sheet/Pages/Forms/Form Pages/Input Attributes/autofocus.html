@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>autofocus</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">autofocus</h1>
+
+    <section>
+        <h2>autofocus</h2>
+        <p>The <code style="color:red">&lt;autofocus&gt;</code> attribute tag is a boolean attribute.
+
+            When present, it specifies that an &lt;input&gt; element should automatically get focus when the page loads.
+        </p>
+        <div style="background:#e4eff1">
+            <p>Example, let the "First name" input field automatically get focus when the page loads:
+            </p>
+            <hr>
+            <code>
+                <pre>
+                    &lt;form action="/action_page.php"&gt;
+                    &lt;label for="fname"&gt;First name:&lt;/label&gt;
+                    &lt;input type="text" id="fname" name="fname" autofocus&gt;&lt;br&gt;&lt;br&gt;
+                    &lt;label for="lname"&gt;Last name:&lt;/label&gt;
+                    &lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt;&lt;br&gt;
+                    &lt;input type="submit"&gt;
+                    &lt;/form&gt;
+                </pre>
+            </code>
+            <code>
+                <form action="/action_page.php">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" autofocus><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname" required><br><br>
+                    <input type="submit">
+                </form>
+            </code>
+        </div>
+        <br>
+        <br>
+        <a href="form-elements.html">Return</a>
+    </section>
+</body>
+
+</html>
