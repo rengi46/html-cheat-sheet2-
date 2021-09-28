@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">HTML &lt;input&gt; <strong>pattern</strong> Attribute</h1>
+
+    <section>
+        <h2>pattern </h2>
+        <p>The <code style="color:red">pattern</code> <code style="color:red"></code> attribute specifies a
+            regular expression that the &lt;input&gt; element's value is checked against on form submission.
+<br><br>
+            <strong>Note</strong>: The <strong>pattern</strong> attribute works with the following input types: <u>text,
+            date, search, url, tel, email,</u> and
+            <u>password.</u>
+<br><br>
+            <strong>Tip</strong>: Use the global title attribute to describe the pattern to help the user.
+        </p>
+        <div style="background:#e4eff1">
+            <p>Example:
+                <br><br>
+                An HTML form with an input field that can contain only three letters (no numbers or special
+                characters):
+            </p>
+            <hr>
+            <code>
+                <pre>
+                    &lt;form action="/action_page.php"&gt;
+                    &lt;label for="country_code"&gt;Country code:&lt;/label&gt;
+                    &lt;input type="text" id="country_code" name="country_code"
+                    pattern="[A-Za-z]{3}" title="Three letter country code"&gt;&lt;br&gt;&lt;br&gt;
+                    &lt;input type="submit"&gt;
+                    &lt;/form&gt;
+                </pre>
+            </code>
+            <samp>
+                <form action="/action_page.php">
+                    <label for="country_code">Country code:</label>
+                        <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}"
+                        title="Three letter country code"><br><br>
+                    <input type="submit">
+                </form>
+                <p><strong>Note:</strong> The pattern attribute of the input tag is not supported in Safari 10 (or
+                    earlier).</p>
+            </samp>
+            <br>
+        </div>
+        <br>
+        <br>
+        <a href="form-elements.html">Return</a>
+    </section>
+</body>
+
+</html>

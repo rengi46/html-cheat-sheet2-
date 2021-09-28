@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholder</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">HTML &lt;input&gt; <strong>placeholder</strong> Attribute</h1>
+
+    <section>
+        <h2>placeholder </h2>
+        <p>The <code style="color:red">placeholder</code> attribute
+            specifies a short hint that describes the expected value of an input field (e.g. a sample value or a short
+            description of the expected format).
+<br><br>
+            The short hint is displayed in the input field before the user enters a value.
+<br><br>
+            <strong>Note</strong>: The <strong>placeholder</strong> attribute works with the following input types:
+            <u>text, search, url,
+            tel, email,</u> and
+            <u>password.</u>
+        </p>
+        <div style="background:#e4eff1">
+            <p>Example:
+                <br><br>
+                A telephone input field with a placeholder text:
+            </p>
+            <hr>
+            <code>
+                <pre>
+                    &lt;form action="/action_page.php"&gt;
+                    &lt;label for="phone"&gt;Enter a phone number:&lt;/label&gt;&lt;br&gt;&lt;br&gt;
+                    &lt;input type="tel" id="phone" name="phone" placeholder="123-45-678"
+                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"&gt;&lt;br&gt;&lt;br&gt;
+                    &lt;small&gt;Format: 123-45-678&lt;/small&gt;&lt;br&gt;&lt;br&gt;
+                    &lt;input type="submit"&gt;
+                    &lt;/form&gt;
+                </pre>
+            </code>
+            <samp>
+                <form action="/action_page.php">
+                    <label for="phone">Enter a phone number:</label><br><br>
+                    <input type="tel" id="phone" name="phone" placeholder="123-45-678"
+                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+                    <small>Format: 123-45-678</small><br><br>
+                    <input type="submit">
+                </form>
+            </samp>
+            <br>
+        </div>
+        <br>
+        <br>
+        <a href="form-elements.html">Return</a>
+    </section>
+</body>
+
+</html>

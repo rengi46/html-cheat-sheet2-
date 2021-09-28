@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">HTML &lt;input&gt; <strong>value</strong> Attribute</h1>
+
+    <section>
+        <h2>value</h2>
+        <p>The <code style="color:red">value</code> <code style="color:red"></code> attribute.For &lt;button&gt;,
+            &lt;input&gt; and &lt;option&gt; elements, the value attribute specifies the initial value of the element.
+
+            For &lt;li&gt; elements, the value attribute sets the value of the list item (for ordered lists). The next
+            list items will increment from that value.
+
+            For &lt;meter&gt; elements, the value attribute specifies the current value of the gauge.
+
+            For &lt;progress&gt; elements, the value attribute specifies how much of the task has been completed.
+
+            For &lt;param&gt; elements, the value attribute specifies the value of the parameter.
+        </p>
+        <div style="background:#e4eff1">
+            <p>&lt;button&gt; Example:
+                <br><br>
+Two buttons with equal names, that submit different values when clicked:
+            </p>
+            <hr>
+            <code>
+                <pre>
+                    &lt;form action="/action_page.php" method="get"&gt;
+                    Choose your favorite subject:
+                    &lt;button name="subject" type="submit" value="fav_HTML"&gt;HTML&lt;/button&gt;
+                    &lt;button name="subject" type="submit" value="fav_CSS"&gt;CSS&lt;/button&gt;
+                    &lt;/form&gt;
+                </pre>
+            </code>
+            <samp>
+                <form action="/action_page.php" method="get">
+                    Choose your favorite subject:
+                    <button name="subject" type="submit" value="fav_HTML">HTML</button>
+                    <button name="subject" type="submit" value="fav_CSS">CSS</button>
+                </form>
+            </samp>
+            <br>
+
+<p>&lt;input&gt; Example:
+    <br><br>
+An HTML form with initial (default) values:
+</p>
+<hr>
+<code>
+    <pre>
+                    &lt;form action="/action_page.php"&gt;
+                    First name: &lt;input type="text" name="fname" value="John"&gt;&lt;br&gt;
+                    Last name: &lt;input type="text" name="lname" value="Doe"&gt;&lt;br&gt;
+                    &lt;input type="submit" value="Submit form"&gt;
+                    &lt;/form&gt;
+                </pre>
+</code>
+<samp>
+    <form action="/action_page.php">
+        First name: <input type="text" name="fname" value="John"><br>
+        Last name: <input type="text" name="lname" value="Doe"><br>
+        <input type="submit" value="Submit form">
+    </form>
+</samp>
+<br>
+
+        </div>
+        <br>
+        <br>
+        <a href="form-elements.html">Return</a>
+    </section>
+</body>
+
+</html>
