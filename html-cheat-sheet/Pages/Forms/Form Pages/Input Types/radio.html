@@ -5,44 +5,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Required</title>
+    <title>Radio</title>
 </head>
 
 <body>
-    <h1 style="text-align: center;">HTML &lt;input&gt; <strong>required</strong> Attribute</h1>
-
+    <h1 style="text-align: center;">HTML &lt;input&gt; <strong>radio</strong> Attribute</h1>
     <section>
-        <h2>required</h2>
-        <p>The <code style="color:red">required</code> <code style="color:red"></code> attribute
-            is a boolean attribute.When present, it specifies that an input field must be filled out before submitting
-            the form.
+        <h2>radio </h2>
+        <p>The <code style="color:red">&lt;input type="radio"&gt;</code> defines a radio &lt;button&gt;.
+<br><br>
+            Radio buttons are normally presented in radio groups (a collection of radio buttons describing a set of
+            related options). Only one radio button in a group can be selected at the same time.
+<br><br>
+            <b>Note</b>: The radio group must have share the same name (the value of the name attribute) to be treated
+            as a
+            group. Once the radio group is created, selecting any radio button in that group automatically deselects any
+            other selected radio button in the same group. You can have as many radio groups on a page as you want, as
+            long as each group has its own name.
+<br><br>
+            <b>Note</b>: The value attribute defines the unique value associated with each radio button. The value is
+            not shown
+            to the user, but is the value that is sent to the server on "submit" to identify which radio button that was
+            selected.
             <br><br>
-            <strong>Note</strong>: The required attribute works with the following input types: <u>text, search, url,
-                tel,
-                email, password,
-                date pickers, number, checkbox, radio,</u> and <u>file.</u>
-            <br><br>
+            <b>Tip</b>: Always add the &lt;label&gt; tag for best accessibility practices!
         </p>
         <div style="background:#e4eff1">
-            <p>Example:
+            <p><b>Example</b>:
                 <br><br>
-                An HTML form with a required input field:
+                Radio buttons let a user select only one of a limited number of choices:
             </p>
             <hr>
             <code>
                 <pre>
                     &lt;form action="/action_page.php"&gt;
-                    &lt;label for="username"&gt;Username:&lt;/label&gt;
-                    &lt;input type="text" id="username" name="username" required&gt;
-                    &lt;input type="submit"&gt;
+                    &lt;p&gt;Please select your favorite Web language:&lt;/p&gt;
+                      &lt;input type="radio" id="html" name="fav_language" value="HTML"&gt;
+                      &lt;label for="html"&gt;HTML&lt;/label&gt;&lt;br&gt;
+                      &lt;input type="radio" id="css" name="fav_language" value="CSS"&gt;
+                      &lt;label for="css"&gt;CSS&lt;/label&gt;&lt;br&gt;
+                      &lt;input type="radio" id="javascript" name="fav_language" value="JavaScript"&gt;
+                      &lt;label for="javascript"&gt;JavaScript&lt;/label&gt;
+
+                    &lt;br&gt;
+
+                    &lt;p&gt;Please select your age:&lt;/p&gt;
+                    &lt;input type="radio" id="age1" name="age" value="30"&gt;
+                    &lt;label for="age1"&gt;0 - 30&lt;/label&gt;&lt;br&gt;
+                    &lt;input type="radio" id="age2" name="age" value="60"&gt;
+                    &lt;label for="age2"&gt;31 - 60&lt;/label&gt;&lt;br&gt;
+                    &lt;input type="radio" id="age3" name="age" value="100"&gt;
+                    &lt;label for="age3"&gt;61 - 100&lt;/label&gt;&lt;br&gt;&lt;br&gt;
+                    &lt;input type="submit" value="Submit"&gt;
                     &lt;/form&gt;
                 </pre>
             </code>
             <samp>
+                <h1>Display Radio Buttons</h1>
+
                 <form action="/action_page.php">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
-                    <input type="submit">
+                    <p>Please select your favorite Web language:</p>
+                      <input type="radio" id="html" name="fav_language" value="HTML">
+                      <label for="html">HTML</label><br>
+                      <input type="radio" id="css" name="fav_language" value="CSS">
+                      <label for="css">CSS</label><br>
+                      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                      <label for="javascript">JavaScript</label>
+
+                    <br>
+
+                    <p>Please select your age:</p>
+                    <input type="radio" id="age1" name="age" value="30">
+                    <label for="age1">0 - 30</label><br>
+                    <input type="radio" id="age2" name="age" value="60">
+                    <label for="age2">31 - 60</label><br>
+                    <input type="radio" id="age3" name="age" value="100">
+                    <label for="age3">61 - 100</label><br><br>
+                    <input type="submit" value="Submit">
                 </form>
             </samp>
             <br>
