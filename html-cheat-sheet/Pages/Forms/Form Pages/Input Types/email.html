@@ -5,43 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Required</title>
+    <title>Email</title>
 </head>
 
 <body>
-    <h1 style="text-align: center;">HTML &lt;input&gt; <strong>required</strong> Attribute</h1>
-
+    <h1 style="text-align: center;">HTML &lt;input&gt; <strong>email</strong> Attribute</h1>
     <section>
-        <h2>required</h2>
-        <p>The <code style="color:red">required</code> <code style="color:red"></code> attribute
-            is a boolean attribute.When present, it specifies that an input field must be filled out before submitting
-            the form.
+        <h2>email </h2>
+        <p>The <code style="color:red">&lt;input type="email"&gt;</code> defines a field
+            for an e-mail address. The <b>input</b> value is automatically validated to ensure it is a properly
+            formatted e-mail address.
+<br><br>
+            To define an e-mail field that allows multiple e-mail addresses, add the "multiple" attribute.
             <br><br>
-            <strong>Note</strong>: The required attribute works with the following input types: <u>text, search, url,
-                tel,
-                email, password,
-                date pickers, number, checkbox, radio,</u> and <u>file.</u>
-            <br><br>
+            <strong>Tip</strong>: Always add the &lt;label&gt; tag for best accessibility practices!
         </p>
         <div style="background:#e4eff1">
-            <p>Example:
+            <p><b>Example</b>:
                 <br><br>
-                An HTML form with a required input field:
+Define a field for an e-mail address (validates automatically when submitted):
             </p>
             <hr>
             <code>
                 <pre>
                     &lt;form action="/action_page.php"&gt;
-                    &lt;label for="username"&gt;Username:&lt;/label&gt;
-                    &lt;input type="text" id="username" name="username" required&gt;
+                    &lt;label for="email"&gt;Enter your email:&lt;/label&gt;
+                    &lt;input type="email" id="email" name="email"&gt;
+                    &lt;input type="submit"&gt;
+                    &lt;/form&gt;
+
+                    &lt;form action="/action_page.php"&gt;
+                    &lt;label for="emails"&gt;Enter email addresses:&lt;/label&gt;
+                    &lt;input type="email" id="emails" name="emails" multiple&gt;
                     &lt;input type="submit"&gt;
                     &lt;/form&gt;
                 </pre>
             </code>
             <samp>
+                <h1>Show Email Fields</h1>
+
+                <h3>Show an email field (allows only one email address):</h3>
                 <form action="/action_page.php">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="email">
+                    <input type="submit">
+                </form>
+
+                <h3>Show an email field (allows multiple email addresses). Separate each email address with a comma:
+                </h3>
+                <form action="/action_page.php">
+                    <label for="emails">Enter email addresses:</label>
+                    <input type="email" id="emails" name="emails" multiple>
                     <input type="submit">
                 </form>
             </samp>

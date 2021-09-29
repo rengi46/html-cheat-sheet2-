@@ -5,45 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Required</title>
+    <title>Time</title>
 </head>
 
 <body>
-    <h1 style="text-align: center;">HTML &lt;input&gt; <strong>required</strong> Attribute</h1>
-
+    <h1 style="text-align: center;">HTML &lt;input&gt; <strong>time</strong> Attribute</h1>
     <section>
-        <h2>required</h2>
-        <p>The <code style="color:red">required</code> <code style="color:red"></code> attribute
-            is a boolean attribute.When present, it specifies that an input field must be filled out before submitting
-            the form.
+        <h2>time</h2>
+        <p>The <code style="color:red">time</code> The &lt;input type="time"&gt; defines
+            a control for entering a time (no time zone).
             <br><br>
-            <strong>Note</strong>: The required attribute works with the following input types: <u>text, search, url,
-                tel,
-                email, password,
-                date pickers, number, checkbox, radio,</u> and <u>file.</u>
-            <br><br>
+            <b>Tip</b>: Always add the &lt;label&gt; tag for best accessibility practices!
         </p>
         <div style="background:#e4eff1">
-            <p>Example:
+            <p><b>Example</b>:
                 <br><br>
-                An HTML form with a required input field:
+                Define a single-line time field that a user can enter time into:
             </p>
             <hr>
             <code>
                 <pre>
                     &lt;form action="/action_page.php"&gt;
-                    &lt;label for="username"&gt;Username:&lt;/label&gt;
-                    &lt;input type="text" id="username" name="username" required&gt;
-                    &lt;input type="submit"&gt;
+                    &lt;label for="fname"&gt;First name: &lt;/label&gt;
+                    &lt;input type="time" id="fname" name="fname"&gt;
+                    &lt;label for="lname"&gt;Last name: &lt;/label&gt;
+                    &lt;input type="time" id="lname" name="lname"&gt;
+                    &lt;input type="submit" value="Submit"&gt;
                     &lt;/form&gt;
                 </pre>
             </code>
             <samp>
+                <h1>Show a Time Input Control</h1>
+
+                <p>If the browser supports it, a time picker pops up when entering the input field.</p>
+
                 <form action="/action_page.php">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
+                    <label for="appt">Select a time:</label>
+                    <input type="time" id="appt" name="appt">
                     <input type="submit">
                 </form>
+<br>
+                <p><strong>Note:</strong> type="time" is not supported in Safari or Internet Explorer 12 and earlier
+                    versions.</p>
+                <p>Click on the submit button to submit the form.</p>
             </samp>
             <br>
         </div>

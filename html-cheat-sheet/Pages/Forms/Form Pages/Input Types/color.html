@@ -5,45 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Required</title>
+    <title>Color</title>
 </head>
 
 <body>
-    <h1 style="text-align: center;">HTML &lt;input&gt; <strong>required</strong> Attribute</h1>
+    <h1 style="text-align: center;">HTML &lt;input&gt; <strong>color</strong> Attribute</h1>
 
     <section>
-        <h2>required</h2>
-        <p>The <code style="color:red">required</code> <code style="color:red"></code> attribute
-            is a boolean attribute.When present, it specifies that an input field must be filled out before submitting
-            the form.
-            <br><br>
-            <strong>Note</strong>: The required attribute works with the following input types: <u>text, search, url,
-                tel,
-                email, password,
-                date pickers, number, checkbox, radio,</u> and <u>file.</u>
-            <br><br>
+        <h2>color </h2>
+        <p>The <code style="color:red">&lt;input type="color"&gt;</code> The <input type="color"> defines a color
+            picker. The default value is #000000 (black). The value must be in seven-character hexadecimal notation.
+<br><br>
+            <strong>Tip</strong>: Always add the &lt;label&gt; tag for best accessibility practices!
         </p>
         <div style="background:#e4eff1">
-            <p>Example:
+            <p><b>Example</b>:
                 <br><br>
-                An HTML form with a required input field:
+Show a color picker (with a predefined red value):
             </p>
             <hr>
             <code>
                 <pre>
                     &lt;form action="/action_page.php"&gt;
-                    &lt;label for="username"&gt;Username:&lt;/label&gt;
-                    &lt;input type="text" id="username" name="username" required&gt;
+                    &lt;label for="favcolor"&gt;Select your favorite color:&lt;/label&gt;
+                    &lt;input type="color" id="favcolor" name="favcolor" value="#ff0000"&gt;&lt;br&gt;&lt;br&gt;
                     &lt;input type="submit"&gt;
                     &lt;/form&gt;
                 </pre>
             </code>
             <samp>
+                <h1>Show a Color Picker</h1>
+
                 <form action="/action_page.php">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
+                    <label for="favcolor">Select your favorite color:</label>
+                    <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
                     <input type="submit">
                 </form>
+
+                <p><b>Note:</b> type="color" is not supported in Internet Explorer 11 or Safari 9.1 (or earlier).</p>
             </samp>
             <br>
         </div>

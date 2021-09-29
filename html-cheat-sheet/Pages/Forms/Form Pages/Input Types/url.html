@@ -5,45 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Required</title>
+    <title>Url</title>
 </head>
 
 <body>
-    <h1 style="text-align: center;">HTML &lt;input&gt; <strong>required</strong> Attribute</h1>
-
+    <h1 style="text-align: center;">HTML &lt;input&gt; <strong>url</strong> Attribute</h1>
     <section>
-        <h2>required</h2>
-        <p>The <code style="color:red">required</code> <code style="color:red"></code> attribute
-            is a boolean attribute.When present, it specifies that an input field must be filled out before submitting
-            the form.
+        <h2>url</h2>
+        <p>The <code style="color:red">url</code> The &lt;input type="url"&gt; defines a field for entering a URL.
+<br><br>
+            The input value is automatically validated before the form can be submitted.
             <br><br>
-            <strong>Note</strong>: The required attribute works with the following input types: <u>text, search, url,
-                tel,
-                email, password,
-                date pickers, number, checkbox, radio,</u> and <u>file.</u>
-            <br><br>
+            <b>Tip</b>: Always add the &lt;label&gt; tag for best accessibility practices!
         </p>
         <div style="background:#e4eff1">
-            <p>Example:
+            <p><b>Example</b>:
                 <br><br>
-                An HTML form with a required input field:
+Define a field for entering a URL:
             </p>
             <hr>
             <code>
                 <pre>
                     &lt;form action="/action_page.php"&gt;
-                    &lt;label for="username"&gt;Username:&lt;/label&gt;
-                    &lt;input type="text" id="username" name="username" required&gt;
+                    &lt;label for="homepage"&gt;Add your homepage:&lt;/label&gt;
+                    &lt;input type="url" id="homepage" name="homepage"&gt;
                     &lt;input type="submit"&gt;
                     &lt;/form&gt;
                 </pre>
             </code>
             <samp>
+                <h1>Display a URL Input Field</h1>
+
                 <form action="/action_page.php">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
+                    <label for="homepage">Add your homepage:</label>
+                    <input type="url" id="homepage" name="homepage"><br><br>
                     <input type="submit">
                 </form>
+                <br>
+                <p><strong>Note:</strong> type="url" is not supported in Safari or Internet Explorer 12 and earlier
+                    versions.</p>
+                <p>Click on the submit button to submit the form.</p>
             </samp>
             <br>
         </div>

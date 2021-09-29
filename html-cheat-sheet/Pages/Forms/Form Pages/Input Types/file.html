@@ -5,43 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Required</title>
+    <title>File</title>
 </head>
 
 <body>
-    <h1 style="text-align: center;">HTML &lt;input&gt; <strong>required</strong> Attribute</h1>
-
+    <h1 style="text-align: center;">HTML &lt;input&gt; <strong>file</strong> Attribute</h1>
     <section>
-        <h2>required</h2>
-        <p>The <code style="color:red">required</code> <code style="color:red"></code> attribute
-            is a boolean attribute.When present, it specifies that an input field must be filled out before submitting
-            the form.
+        <h2>file </h2>
+        <p>The <code style="color:red">&lt;input type="file"&gt;</code> defines a file-select field and a "Browse"
+            button for file uploads.
+
+            To define a file-select field that allows multiple files to be selected, add the multiple attribute.
             <br><br>
-            <strong>Note</strong>: The required attribute works with the following input types: <u>text, search, url,
-                tel,
-                email, password,
-                date pickers, number, checkbox, radio,</u> and <u>file.</u>
-            <br><br>
+            <strong>Tip</strong>: Always add the &lt;label&gt; tag for best accessibility practices!
         </p>
         <div style="background:#e4eff1">
-            <p>Example:
+            <p><b>Example</b>:
                 <br><br>
-                An HTML form with a required input field:
+                Define a field for an e-mail address (validates automatically when submitted):
             </p>
             <hr>
             <code>
                 <pre>
                     &lt;form action="/action_page.php"&gt;
-                    &lt;label for="username"&gt;Username:&lt;/label&gt;
-                    &lt;input type="text" id="username" name="username" required&gt;
+                    &lt;label for="myfile"&gt;Select a file:&lt;/label&gt;
+                    &lt;input type="file" id="myfile" name="myfile"&gt;&lt;br&gt;&lt;br&gt;
+                    &lt;input type="submit"&gt;
+                    &lt;/form&gt;
+
+                    &lt;form action="/action_page.php"&gt;
+                    &lt;label for="myfile"&gt;Select files:&lt;/label&gt;
+                    &lt;input type="file" id="myfile" name="myfile" multiple&gt;&lt;br&gt;&lt;br&gt;
                     &lt;input type="submit"&gt;
                     &lt;/form&gt;
                 </pre>
             </code>
             <samp>
+                <h1>Show File-select Fields</h1>
+
+                <h3>Show a file-select field which allows only one file to be chosen:</h3>
                 <form action="/action_page.php">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
+                    <label for="myfile">Select a file:</label>
+                    <input type="file" id="myfile" name="myfile"><br><br>
+                    <input type="submit">
+                </form>
+
+                <h3>Show a file-select field which allows multiple files:</h3>
+                <form action="/action_page.php">
+                    <label for="myfile">Select files:</label>
+                    <input type="file" id="myfile" name="myfile" multiple><br><br>
                     <input type="submit">
                 </form>
             </samp>
