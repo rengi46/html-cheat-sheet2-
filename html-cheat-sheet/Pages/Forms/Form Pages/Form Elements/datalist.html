@@ -15,19 +15,62 @@
         <h2>Datalist</h2>
         <p>
 
-        The <code style="color:red">&lt;datalist&gt;</code> HTML element contains a set of <code style="color:red">
-            &lt;option&gt;
-        </code> elements that represent the
-            permissible or recommended
-                options available to choose from within other controls.
+        The <code style="color:red">&lt;datalist&gt;</code> HTML element tag specifies a list of pre-defined options for an &lt;input&gt; element.
+<br><br>
+                The &lt;datalist&gt; tag is used to provide an "autocomplete" feature for &lt;input&gt; elements. Users
+                will see a drop-down list of pre-defined options as they input data.
+<br><br>
+                The &lt;datalist&gt; element's id attribute must be equal to the &lt;input&gt; element's list attribute
+                (this binds them together).
                 </p>
         <br>
         <br>
-        <img src="/Users/marceldurgante/Documents/Assembler/html-cheat-sheet/Images/datalist-code.png">
+        <div style="background:#e4eff1">
+            <p>Example:
+                <br><br>
+                A datalist with pre-defined options (connected to an &lt;input&gt; element):
+            </p>
+            <hr>
+            <code>
+                <pre>
+                    &lt;form action="/action_page.php" method="get"&gt;
+                    &lt;label for="browser"&gt;Choose your browser from the list:&lt;/label&gt;
+                    &lt;input list="browsers" name="browser" id="browser"&gt;
+                    &lt;datalist id="browsers"&gt;
+                    &lt;option value="Edge"&gt;
+                    &lt;option value="Firefox"&gt;
+                    &lt;option value="Chrome"&gt;
+                    &lt;option value="Opera"&gt;
+                    &lt;option value="Safari"&gt;
+                    &lt;/datalist&gt;
+                    &lt;input type="submit"&gt;
+                    &lt;/form&gt;
+                </pre>
+            </code>
+            <samp>
+                <h1>The datalist element</h1>
+
+                <form action="/action_page.php" method="get">
+                    <label for="browser">Choose your browser from the list:</label>
+                    <input list="browsers" name="browser" id="browser">
+                    <datalist id="browsers">
+                        <option value="Edge">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
+                    <input type="submit">
+                </form>
+
+                <p><strong>Note:</strong> The datalist tag is not supported in Safari 12.0 (or earlier).</p>
+            </samp>
+            <br>
+        </div>
         <br>
         <br>
         <a
-            href="/Users/marceldurgante/Documents/Assembler/html-cheat-sheet2-/html-cheat-sheet/Pages/Forms/Form Pages/Form Elements/form-elements.html">Return</a>
+            href="/html-cheat-sheet/Pages/Forms/Form Pages/Form Elements/form-elements.html">Return</a>
     </section>
 </body>
 
